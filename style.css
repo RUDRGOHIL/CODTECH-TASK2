@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 86%, 23%);
+    background-image: url(Asian-monsoon-scaled.jpg);
+    background-size: cover;   
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.weather-app {
+    background-size: cover;
+    background-image:url(pexels-eberhardgross-1743392.jpg);
+    background-color:rgb(204, 3, 3);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #a598a4c6;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 3.5rem;
+}
+
+.search-btn {
+    background-color: #000000c6;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(3, 101, 249);
+    margin-left: 10px;
+    transition: backgroung-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color:rgb(255, 255, 255);
+}
+
+.city-date-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city-date-section .city {
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.city-date-section .date {
+    background-color: #c3eaf4;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.temperature-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temperature-info .temp {
+    font-size: 10rem;
+}
+
+.temperature-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temperature-info .description i {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.temperature-info .description span {
+    font-size: 1.5rem;
+}
+
+.additional-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+    background-color:rgb(182, 162, 162);
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 50%; 
+    padding: 15px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+}
+
+.wind-info:hover{
+    color: aqua;
+}
+.humidity-info:hover{
+    color: blue;
+}
+.visibility-info:hover{
+    color:rgb(6, 90, 46);
+}
+
+.additional-info .material-icons {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;
+}
+
+
+.footer{
+    margin-top:0px ;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    padding-top: 5px;
+    
+    font-size: 20px;
+}
