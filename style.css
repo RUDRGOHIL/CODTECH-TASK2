@@ -1,154 +1,350 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-color: hsl(204, 86%, 23%);
-    background-image: url(Asian-monsoon-scaled.jpg);
-    background-size: cover;   
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+body{
+    background-color: white;
 }
 
-.weather-app {
-    background-size: cover;
-    background-image:url(pexels-eberhardgross-1743392.jpg);
-    background-color:rgb(204, 3, 3);
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 40px;
-}
-
-.search-form {
+nav{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    background-color: #5C7C89;
+    padding: 17px;
+    box-shadow: 0px 2px 2px 2px #496571;
 }
 
-input[type="text"] {
-    flex: 1;
-    padding: 20px;
-    border: 2px solid #a598a4c6;
-    border-radius: 15px;
-    font-size: 1rem;
-    height: 3.5rem;
+nav .logo{
+    margin-left: 22px;
+    font-size: 22px;
 }
 
-.search-btn {
-    background-color: #000000c6;
-    border: none;
-    padding: 15px;
-    border-radius: 50%;
+
+
+ul{
+    margin-right: 45px;
+}
+
+nav ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li a{
+    margin-inline: 22px;
+    font-size: 20px;
+}
+
+ul li i{
+    font-size: 20px;
+}
+
+ul li #home{
+    color: aqua;
+}
+
+ul li a:hover{
+    border-bottom:3px solid rgb(11, 230, 230);
     cursor: pointer;
-    color: rgb(3, 101, 249);
-    margin-left: 10px;
-    transition: backgroung-color 0.3s ease;
 }
 
-.search-btn:hover {
-    background-color:rgb(255, 255, 255);
+ul li i:hover{
+    color: rgb(0, 255, 242);
+    cursor: pointer;
 }
 
-.city-date-section {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.city-date-section .city {
-    font-size: 2rem;
-    opacity: 0.9;
-}
-
-.city-date-section .date {
-    background-color: #c3eaf4;
-    padding: 5px 10px;
-    border-radius: 15px;
-}
-
-.temperature-info {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.temperature-info .temp {
-    font-size: 10rem;
-}
-
-.temperature-info .description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.temperature-info .description i {
-    font-size: 1.5rem;
-    opacity: 0.8;
-}
-
-.temperature-info .description span {
-    font-size: 1.5rem;
-}
-
-.additional-info {
-    margin-top: 20px;
+.main{
     display: flex;
     justify-content: space-around;
 }
-
-.wind-info,
-.humidity-info,
-.visibility-info {
-    background-color:rgb(182, 162, 162);
-    width: 125px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 50%; 
-    padding: 15px 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+.main img{
+    margin-top: 10px;
 }
 
-.wind-info:hover{
-    color: aqua;
-}
-.humidity-info:hover{
-    color: blue;
-}
-.visibility-info:hover{
-    color:rgb(6, 90, 46);
+.main .mainText{
+    margin-top: 260px;
+  
 }
 
-.additional-info .material-icons {
-    font-size: 3rem;
-    opacity: 0.8;
+.mainText h1{
+    font-size: 64px;
 }
 
-.wind-info div,
-.humidity-info div,
-.visibility-info div {
+.mainText .top{
+    color: rgb(0, 155, 155);
+}
+
+.mainText button{
+    width: 145px;
+    height: 40px;
+    background-color: rgb(0, 97, 97);
+    border: none;
+    font-size: 22px;
+    color: white;
+    margin-top:24px;
+}
+
+.mainText button:hover{
+    border: 2px solid rgb(1, 97, 97);
+    background-color:transparent;
+    color: rgb(0, 108, 108);
+}
+
+.trend .head{
     text-align: center;
+    padding: 33px;
+    margin-top: 0px;
 }
 
+.trendsec .head{
+    text-align: center;
+    padding: 33px;
+    margin-top: 22px;
+}
+
+.head span {
+    color: rgb(0, 127, 127);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+}
+
+.card .crd{
+    width:300px ;
+    height: 550px;
+    margin-inline: 35px;
+    margin-left: 80px;
+    background-color: #48636d;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.crd img{
+    width: 80%;
+    padding: 30px;
+    border-radius:55px;
+}
+
+.trendsec .crd img{
+    height: 360px;
+    padding: 30px;
+    border-radius: 55px;
+}
+.crdText{
+    margin-top: 1px;
+    margin-left: 26px;
+    padding: 8px;
+}
+
+
+.crdText button{
+    width: 130px;
+    height: 33px;
+    border: none;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+.crdText i{
+    color:yellow
+}
+
+.letter{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color:#5C7C89;
+    padding: 43px;
+    margin-top: 60px;
+}
+
+.inp{
+    display: flex;
+}
+
+.inp input{
+    width: 330px;
+    height: 33px;
+    outline: none;
+    font-size: 18px;
+
+}
+
+.inp button{
+    margin-top: 1px;
+    width: 100px;
+    height: 34px;
+    background-color: aqua;
+    color: black;
+    font-weight: 600;
+    border: none;
+
+}
 
 .footer{
-    margin-top:0px ;
-    text-align: center;
-    background-color: black;
-    color: white;
-    height: 30px;
-    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 53px;
+    background-color: grey;
+    margin-top: 40px;
     
-    font-size: 20px;
 }
+
+
+.footText{
+    margin-inline: 115px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+/* about */
+
+.about{
+  display: none;
+}
+
+
+.aboutus{
+    background-color:#011425;
+    color: white;
+    padding: 56px;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.me{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    background-color: #1F4959;
+    padding: 33px;
+    margin-left: 28%;
+    margin-top: 5%;
+}
+
+.me img{
+    width: 54%;
+}
+
+.aboutText{
+    font-size: 19px;
+    padding-left: 15px;
+}
+
+/* contact */
+.contact{
+    display: none;
+}
+.contactus{
+    background-color:#011425;
+    color: white;
+    padding: 56px;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.contactMe{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin-top: 5%;
+    padding: 22px;
+    background-color: #1F4959;
+    margin-left: 16%;
+
+}
+
+.contactMe img{
+    width: 55%;
+}
+
+.contactText{
+    padding: 22px;
+    width: 600px;
+}
+
+.contactText p{
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.form{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.form input{
+    width: 250px;
+    padding: 5px;
+    height: 27px;
+    margin-top: 11px;
+}
+
+.form button{
+    width: 100px;
+    height: 36px;
+    background-color: aqua;
+    color: black;
+    font-weight: 4000;
+    font-size: 22px;
+    border: solid rgb(48, 45, 45);
+    border-radius: 10px;
+    margin-top: 22px;
+}
+
+ /* cart */
+
+ .cart{
+    display: flex;
+    justify-content: center;
+    display: none;
+ }
+.cart img{
+    padding-top: 10px;
+    height: 450px;
+    width: 350px;
+}
+ .cartText{
+    padding: 22px;
+    margin-top: 22px;
+ }
+
+ .cartText p{
+     margin-top: 12px;
+ }
+
+ .cartText h2{
+    margin-top: 11px;
+ }
+
+ .cartText .btn button{
+    width: 140px;
+    height: 40px;
+    background-color: #1F4959;
+    color: black;
+    border: none;
+    font-size: 22px;
+    margin-inline: 11PX;
+    margin-top: 22px;
+ }
+
+ .cartText .back{
+    width: 140px;
+    height: 40px;
+    background-color: aqua;
+    color: black;
+    border: none;
+    font-size: 22px;
+    margin-inline: 11PX;
+    margin-top: 22px;
+ }
