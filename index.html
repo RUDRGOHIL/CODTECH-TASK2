@@ -1,71 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        />
-        <title>Weather App</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="weather-app">
-            <form class="search-form" action="">
-                <input
-                    class="city-input"
-                    type="text"
-                    placeholder="Enter City Name"
-                />
-                <button class="search-btn" type="submit">
-                    <i class="material-icons">search</i>
-                </button>
-            </form>
-            <div class="city-date-section">
-                <h2 class="city">Bhavnagar</h2>
-                <p class="date">23 july 2024</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G|R fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b391d6fcae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>G|R fashion</h1>
             </div>
-            <div class="temperature-info">
-                <div class="description">
-                    <i class="material-icons">sunny</i>
-                    <span class="description-text">Sunny</span>
-                </div>
-                <div class="temp">20°</div>
+            <ul>
+                <li>
+                    <b>
+                    <a id="home"onclick="homes()">Home</a>
+                    <a id="shop"onclick="shops()">Shop</a>
+                    <a id="about"onclick="abouts()">About</a>
+                    <a id="contact"onclick="contacts()">Contact</a>
+                    <i class="fa-brands fa-opencart"></i>
+                    </b>
+                </li>
+            </ul>
+        </nav>
+  
+        <!-- Main page -->
+         <div class="main">
+            <div class="mainText">
+                <h1 class="top">Super valueable offers</h1>
+                <h1>On all Commodity</h1>
+                <p></p>
+                <button>Explore</button>
             </div>
-            <div class="additional-info">
-                <div class="wind-info">
-                    <i class="material-icons">air</i>
-                    <div>
-                        <h3 class="wind-speed">4 KM/H</h3>
-                        <p class="wind-label">Wind</p>
-                    </div>
+            <img src="man-doing-victory-gesture-white-background.jpg" alt="" style="height: 650px; width: 500px;">
+         </div>
+
+         <!-- cards -->
+         <div class="trend">
+            <div class="head">
+                <h1>G|R fashion <span>Man's wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="shr1.jpg" alt="" onclick="show(this)">
+                    <div class="crdText">
+                    <h2>Heritage shirt</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><br>
+                    <button>Add to Cart</button>
                 </div>
-                <div class="humidity-info">
-                    <i class="material-icons">water_drop</i>
-                    <div>
-                        <h3 class="humidity">45%</h3>
-                        <p class="humidity-label">humidity</p>
-                    </div>
                 </div>
-                <div class="visibility-info">
-                    <i class="material-icons">visibility</i>
-                    <div>
-                        <h3 class="visibility-distance">4 KM/H</h3>
-                        <p class="visibility">Visibility</p>
-                    </div>
+            
+
+
+           
+                <div class="crd">
+                    <img src="shr2.jpg" alt=""  onclick="show(this)">
+                    <div class="crdText">
+                    <h2>Heritage shirt</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><br>
+                    <button>Add to Cart</button>
                 </div>
+                </div>
+            
+
+            
+                <div class="crd">
+                    <img src="shr3.jpg" alt=""  onclick="show(this)">
+                    <div class="crdText">
+                    <h2>Heritage shirt</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><br>
+                    <button>Add to Cart</button>
+                </div>
+                </div>
+            
+         </div>
+        </div>
+
+        <div class="trendsec">
+            <div class="head">
+                
+            </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="shr4.jpeg" alt=""  onclick="show(this)">
+                    <div class="crdText">
+                    <h2>Heritage shirt</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><br>
+                    <button>Add to Cart</button>
+                </div>
+                </div>
+            
+
+
+           
+                <div class="crd">
+                    <img src="shr5.jpg" alt=""  onclick="show(this)">
+                    <div class="crdText">
+                    <h2>Heritage shirt</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><br>
+                    <button>Add to Cart</button>
+                </div>
+                </div>
+            
+
+            
+                <div class="crd">
+                    <img src="shr6.webp" alt=""  onclick="show(this)">
+                    <div class="crdText">
+                    <h2>Heritage shirt</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><br>
+                    <button>Add to Cart</button>
+                </div>
+                </div>
+            
+         </div>
+        </div>
+
+        <!-- cart -->
+
+        <div class="cart">
+            <img id="newImg" src="" alt=" ">
+            <div class="cartText">
+                <h1>G|R offer : Trending shop <br>Now</h1>
+                <h2></h2>
+                <h2>Special offer</h2>
+                <h2>1100 rs.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="btn">
+                    <button>Buy Now</button>
+                <button onclick="addcart()">Add To Cart</button>
+                </div>
+                <button class="back">Back</button>
             </div>
         </div>
+
+        <!-- aboutus -->
+    
+        <div class="about">
+            <div class="aboutus">
+                <h1>#KnowUs</h1>
+            </div>
+    
+            <div class="me">
+                <img src="lap.jpg" alt="">
+                <div class="aboutText">
+                    <h1>Who we are ?</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia officiis quod beatae vitae assumenda quis amet nam ab non dolores soluta nisi velit commodi, ipsam vero, minus autem quisquam tempora!</p>
+                </div>
+            </div>
+            </div>
+        
+       <!-- contact -->
+        
+       <div class="contact">
+        <div class="contactus">
+            <h1>#Let's Connect</h1>
+        </div>
+
+        <div class="contactMe">
+        
+            <div class="contactText">
+                <h1>Visit Us Office/Connect Us</h1>
+                <p>Address  :  <span style="margin-left: 9px;">Iconic park , Bhavnagar , Gujarat</span></p>
+                <p>E-mail  : <span style="margin-left: 20px;">grfasion12@gmail.com</span></p>
+                <p>Contact  :<span style="margin-left: 12px;">  0278-142576</span></p>
+            </div>
+            <img src="map.png" alt="">
+        </div>
+
+        <div class="form">
+            <h1>connect with Us .Fill  Form</h1>
+            <input type="text" placeholder="Enter Email"><br>
+            <input type="text" placeholder="Enter Email"><br>
+            <input type="text" placeholder="Enter Email"><br>
+            <input type="text" placeholder="Enter Email"><br>  
+            <button>submit</button>
+        </div>
+
+        </div>
+        <!-- Letter -->
+
+        <div class="letter">
+            <div class="letterText">
+                <h1>SignUp for Newslatters</h1>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Email">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+
+        <!-- footer -->
 
         <div class="footer">
-            <marquee direction="left to right">
-           <b>
-            Developed by Gohil Rudra.
-           </b>
-        </marquee>
-        </div>
+            <div class="footText">
+                <h2>G|R fashion   </h2><br>
+                <p>Service</p><br>
+                <p>Customer</p><br>
+                <p>Satisfaction</p>
+                <p></p>
+            </div>
 
-        <script src="script.js"></script>
-    </body>
+            <div class="footText">
+                <h2>About US</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                   Consequuntur obcaecati, qui velit eum quas dignissimos <br>  
+                   repellendus debit.</p><br>
+                <p>service</p><br>
+                <p>Customer</p>
+                <p></p>
+            </div>
+
+            <div class="footText">
+                <h2>Contact</h2><br>
+                <p>235689124578</p><br>
+                <p>Customer</p>
+                <p>Comming Up..</p>
+                <p>New Arrival</p>
+            </div>
+        </div>
+        </div>
+        <script src="web.js"></script>
+</body>
 </html>
